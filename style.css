@@ -1,0 +1,495 @@
+@font-face {
+    font-family: Matelo;
+    src: url(./assets/fonts/SuisseIntl-Regular.ttf);
+}
+
+@font-face {
+    font-family: Design;
+    src: url(./Mag.ttf);
+}
+
+@font-face {
+    font-family: cool;
+    src: url(./assets/fonts/Coolvetica\ Rg.ttf);
+}
+
+@font-face{
+    font-family: light;
+    src: url(./assets/fonts/Matello-light.ttf);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Matelo";
+    
+    
+}
+
+html, body{
+    height: 100%;
+    width: 100%;
+}
+
+#page1{
+    height: 100vh;
+    width: 100%;
+    background-color: #dadada;
+    position: relative;
+
+}
+
+#cursor{
+    height: 8.5vw;
+    width: 8.5vw;
+    /* background-color: #ff6f00; */
+    border-radius: 50%;
+    position: fixed;
+    z-index: 9;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transform: translate(-50%, -50%);
+    
+    
+}
+
+#cursor img{
+    height: 1.3vw;
+    width: 1.3vw;
+    padding-right: 4px;
+    
+    
+}
+
+#cursor h5{
+    color: #dadada;
+    font-size: 1.3vw;
+    font-weight: 50;
+}
+
+#page1 video{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    position: absolute;
+}
+
+#page1-content{
+    height: 100%;
+    width: 100%;
+    /* background-color:black; */
+    position: relative;
+    z-index: 10;
+    color: #fff;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: space-between;
+    padding-bottom: 12vw;
+}
+
+#page1-content a{
+    text-decoration: none;
+    color: #fff;
+}
+
+nav{
+    /* height: 100px; */
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 3vw 3vw;
+    width: 100%;
+    
+    /* background-color: red; */
+}
+
+nav h3{
+    font-size: 3vmin;
+    font-weight: 100;
+}
+
+nav h4{
+    font-size: 3vmin;
+    font-weight: 100;
+    text-decoration: none;
+    
+}
+
+nav h4:hover{
+    color: #ff6f00;
+}
+
+
+
+#page1-content h1{
+    font-family: "cool";
+    font-size: 15vw;
+    font-weight: 100;
+    line-height: 5vw;
+}
+
+/* #page1-content h1:hover{
+    font-family: "cool";
+    font-size: 15vw;
+    font-weight: 100;
+    line-height: 5vw;
+    cursor:pointer;
+
+} */
+
+#page1-content h1 span{
+    font-family: "cool";
+    opacity: 90%;
+    display: inline-block;
+}
+
+#page1-content h1 span:hover{
+    font-family: "cool";
+    font-size: 17vw;
+    opacity: 100%;
+    
+}
+
+#page2{
+    height: 100vh;
+    width: 100%;
+}
+
+#page2-content{
+    height: 100%;
+    width: 100%;
+    background-color: rgb(255, 255, 255);
+}
+
+#text{
+    margin-top: 3vw;
+    display: flex;
+    /* background-color: aquamarine; */
+    justify-content: space-between;
+    padding: 1vw 3vw;
+}
+
+#text h2{
+    font-size: 2vmax;
+    color: black;
+    font-family: "Matelo";
+}
+
+#text .text2{
+    font-size: 2vmax;
+    color: black;
+    padding-top: 2.5vw;
+}
+
+
+#page2-content #line hr {
+    height: 1px; /* Thickness of the line */
+    width: 94%; /* Width of the line, adjust as needed */
+    background-color: black; /* Color of the line */
+    border: none; /* Remove default border */
+    margin: 0.1vw 3vw; /* Center the line horizontally */
+    position: relative; /* Enables positioning adjustments if needed */
+}
+
+#page2-info p{
+    font-size: 5vmax;
+    text-align: center;
+    color: black;
+    padding: 3vw 3vw;
+}
+
+#page2-info p span{
+    color: black;
+}
+
+#page3{
+    min-height: 100vh;
+    width: 100%;
+    position: relative;
+    padding: 3vw;
+    margin-top: -15ew;
+}
+
+#page3-top{
+    /* background-color: red; */
+    text-align: center;
+}
+
+#page3-top h4{
+    margin-bottom: 1vw;
+    font-size: 1vmax;
+}
+
+#page3-top h4 span{
+    font-size: 7px;
+    background-color: black;
+    color: #fff;
+    padding: 3px 10px;
+    border-radius: 8px;
+}
+
+#page3-top h4 img{
+    position: absolute;
+    height: 0.7vw;
+    width: 1vw;
+    margin: 6px;
+}
+
+#page3-top h2{
+    font-size: 4vmin;
+    font-weight: 500;
+}
+
+#page3-elements{
+    height: 70vh;
+    width: 100%;
+    /* background-color: red; */
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 8vmin;
+}
+
+#page3-elements .box{
+    height: 100%;
+    width: 32.5%;
+    /* background-color: blue; */
+    position: relative;
+}
+
+#page3-elements .box video{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    object-position: center;
+}
+
+#page3-elements .box img{
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    object-fit: cover;
+    transition: all ease-in 0.5s;
+}
+
+#page3-elements .box:hover img{
+    opacity: 0;
+}
+
+#page4{
+    min-height: 100vh;
+    width: 100%;
+    padding: 4vw 0;
+    position: relative;
+}
+
+#page4-top{
+    height: 100%;
+    width: 100%;
+    
+}
+
+#page4-top h4{
+   margin-left: 2.9vw;
+   margin-bottom: -1.6vw;
+}
+
+#page4-top hr{
+    margin: 2.9%;
+}
+
+#page4-top h1{
+    margin-left: 2.9vw;
+    font-size: 5vmin;
+    font-weight: 500;
+    
+}
+
+#design h1{
+    font-size: 18vw;
+    position: absolute;
+    padding-top: 2vw;
+    display: flex;
+    justify-content: space-between;
+    margin-left: -100px;
+}
+
+
+
+#loader{
+    height: 100%;
+    width: 100%;
+    color: #fff;
+    position: fixed;
+    top: 0;
+    background-color: black;
+    z-index: 99;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+}
+
+#loader h3{
+    font-weight: 100;
+    font-size: 2vw;
+    }
+
+
+/* Contact page code */
+
+#page-1{
+    height: 100vh;
+    width: 100%;
+    background-color: #000000;
+    position: relative;
+}
+
+#header{
+    height: 100%;
+    width: 100%;
+    /* background-color:black; */
+    position: relative;
+    z-index: 10;
+    color: #fff;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: space-between;
+    padding-bottom: 10vmax;
+    
+}
+
+#header h1{
+    /* background-color: aqua; */
+    font-family: "light";
+    font-size: 4vmax;
+    font-weight: 100;
+    line-height: 4vw;
+    margin: 3vw;
+}
+
+/* #header h5{
+    font-size: 3vw;
+    text-align: left;
+    position: relative;
+} */
+
+
+
+/* #address h5{
+    font-size: 2vmax;
+} */
+
+/* #address h5 #clock{
+    font-size: 2vmax;
+    color: #000000;
+} */
+
+/* #address h4{
+    font-size: 2vmax;
+} */
+
+
+/* Tial Css for page 2 */
+
+#page-1 {
+    height: 100vh;
+    width: 100%;
+    background-color: #000;
+    color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+  }
+
+  #page-1 .a1 h4 a{
+    text-decoration: none;
+    color:  #fff;
+  }
+
+  #page-1 .a1 h4{
+    /* background-color: #4e4e4e; */
+    padding: 1.2vw;
+  }
+  #page-1 .a1 h4 a:hover{
+    color: #ff6f00;
+  }
+  
+
+  #datetime {
+    font-size: 4.8vmax;
+    font-family: "Matelo";
+    margin: 2vmin 0;
+    color: #fff;
+  }
+  
+
+  #page-1 #header h1 {
+    font-size: 4vmax;
+    font-family: "light";
+    margin-bottom: 1vmax;
+  }
+  
+  #page-1 #header h4 {
+    font-size: 1.5vmax;
+    font-family: "Matelo";
+  }
+  
+  #p2 {
+    background-color: #4e4e4e;
+    padding: 4vmin 4vw;
+    color: #fff;
+  }
+  
+  #p2-content h2 {
+    font-family: "Matelo";
+    font-size: 2vmax;
+  }
+  
+  .contact-details h4 {
+    font-size: 1.2vmax;
+    margin: 1vmin 0;
+    font-family: "light";
+  }
+  
+  .contact-form {
+    margin-top: 4vmax;
+  }
+  
+  .contact-form h3 {
+    font-size: 2vmax;
+    margin-bottom: 2vmin;
+    font-family: "Matelo";
+  }
+  
+  .contact-form input,
+  .contact-form textarea {
+    width: 100%;
+    padding: 1vmin;
+    margin-bottom: 1.5vmin;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 1vmax;
+    font-family: "Matelo";
+  }
+  
+  .contact-form button {
+    padding: 1vmin 2vmin;
+    font-size: 1vmax;
+    background-color: #000;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: 0.3s;
+  }
+  
+  .contact-form button:hover {
+    background-color: #ff6f00;
+  }
+  
